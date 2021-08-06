@@ -1,0 +1,316 @@
+:root {
+    --border: 1px solid black;
+    --main-color: rgb(19, 136, 4);
+    --second-color: #65735b;
+    --third-color: rgb(213,224,213)
+}
+// * {
+//     border: var(--border);
+// }
+body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    box-sizing: border-box;
+    font-family: 'Neue Montreal Medium';
+
+    
+    
+}
+.caret {
+    width: 12px;
+    height: min-content; 
+}
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+input:focus {
+    outline: none;
+}
+.container {
+    position: relative;
+    display: flex;
+    width: 1137px;
+    margin: 0 auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+.nav-container {
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    display: block;
+    background-color: rgb(255,255,255);
+    
+}
+.nav {
+    
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: -10px auto;
+    .logo {
+        color: var(--main-color);
+        h1 {
+            
+            font-size: 34px;
+            letter-spacing: -3px;
+        }
+    }
+    .list-services {
+        display: flex;
+        align-content: center;
+        ul {
+            display: flex;
+            align-items: center;
+
+
+            li {
+                display: flex;
+                align-items: center;
+                list-style: none;
+                margin-right: 15px;
+                cursor: pointer;
+                a {
+                    margin-right: 4px;
+                    color: var(--second-color);
+                }
+            
+            }
+            li:hover {
+                a {
+                    color: var(--main-color);
+                }
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+
+        form {
+            border: 1px solid var(--third-color);
+            padding: 6px 7px 6px 14px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            .search {
+                fill: var(--second-color);
+            }
+            input {
+                font-size: 16px;
+                width: 200px;
+                border: none;
+            }
+            img {
+                margin-right: 3px;
+            }
+        }
+    }
+    .account {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-right: 20px;
+            color: var(--second-color)
+        }
+        a:hover {
+            color: var(--main-color);
+        }
+        button{
+            padding: 9px 22px;
+            border-radius: 100px;
+            color: white;
+            font-weight: 700;
+            background-color: var(--main-color);
+            border: 0.99px solid rgba(0, 0, 0, 0);
+            cursor: pointer;
+
+            
+        }
+        button:hover {
+            background-color: rgb(76, 102, 70);
+            
+        }
+    }
+    
+}
+
+.line {
+    margin: 0 auto;
+    width: 100%;
+    height: 1px;
+    background-color: var(--third-color);
+    
+}
+.sub-nav {
+    width: 100%;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        li {
+            list-style: none;
+            a {
+                color: var(--second-color)
+            }
+            a:hover {
+                color: var(--main-color);
+            }
+            
+        }
+    }
+    
+}
+
+.main-content {
+    margin: 80px auto 30px;
+    width: 100%;
+    display: flex;
+    
+    
+    .hero {
+        --webkit-text-size-adjust: 100%;
+        width: 55%;
+        .heading {
+            font-size: 80px;
+            color: var(--main-color);
+            line-height: 70px;
+            margin-bottom: 20px;
+            letter-spacing: -3px;
+            font-weight: 500;
+            text-shadow: 10px var(--main-color);
+
+
+        }
+        .paragraph {
+            color: var(--second-color);
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        .btn button {
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 40px;
+            
+        }
+        .btn .talent {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            background-color: var(--main-color);
+            border: 1px solid rgba(0, 0, 0, 0);
+            margin-right: 10px;
+        }
+        .btn .talent:hover {
+            background-color: rgb(76, 102, 70);
+        }
+        .btn .work {
+            color: var(--main-color);
+            font-size: 16px;
+            font-weight: 500;
+            background-color: white;
+            border: 1px solid var(--main-color);
+            
+        }
+        .btn .work:hover {
+            background-color: rgb(236, 236, 236);
+        }
+        .sponsor {
+            h4 {
+                font-size: 16px;
+                color: var(--second-color);
+                font-weight: 300;
+                font-family: 'Noto Sans JP', sans-serif;
+                
+            }
+            .spon-logo {
+                img {
+                    margin-right: 20px;
+                    width: 80px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    .hero-image {
+        width: 45%;
+        img {
+            text-align: center;
+            width: 480px;
+            height: 480px;
+        }
+    }
+}
+
+// ---------------------------------------------------------------------------------------------------------
+
+.main-content1 {
+    width: 100%;
+    
+    height: 570px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position-x: 50%;
+    box-sizing: border-box;
+    --webkit-text-size-adjust: 100%;
+    margin: 0 auto;
+    background-image: url('../asset/find-talent.webp');
+    padding: 27px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    h4 {
+        margin: 8px 0 100px;
+    }
+    h1 {
+        line-height: 50px;
+        font-family: 'PT Serif', serif;
+        font-size: 63px;
+        font-weight: 400;
+    }
+    .flex-content {
+        
+        display: flex;
+        justify-content: space-between;
+        .flex-items {
+            background-color: rgb(19, 136, 4);
+            width: 330px;
+            height: 165px;
+            padding-left: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            h2 {
+                margin-top: 10px;
+                margin-bottom: 50px;
+            }
+            p {
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+                svg {
+                    color: white;
+                    margin-left: 5px;
+                    width: 14px;
+                }
+            }
+        }
+        .flex-items:hover {
+            background-color: white;
+            color: var(--main-color);
+            svg {
+                color: var(--main-color);
+            }
+
+        }
+    }
+}
