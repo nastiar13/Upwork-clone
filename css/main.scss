@@ -454,3 +454,123 @@ input:focus {
         }
     }
 }
+
+// main content 4 ========================================================================================
+
+.main-content4 {
+    display: flex;
+    margin-top: 80px;
+    .testimoni {
+        margin-right: 20px;
+    }
+    .heading h1 {
+        margin-top: 0;
+        font-size: 74px;
+        margin-left: 30px;
+        font-weight: 600;
+    }
+    img {
+        border-radius: 7px;
+        margin-bottom: 35px;
+    }
+    .testimonial {
+        width: 480px;
+        
+        q {
+            font-size: 28px;
+            color: rgb(20,168,0);
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        h5 {
+            font-size: 25px;
+            font-weight: normal;
+            margin-top: 20px;
+            margin-bottom: 4px;
+        }
+        .line {
+            width: 360px;
+            margin-left: 0;
+            background-color: black;
+        }
+        p {
+            font-size: 22px;
+            margin: 0;
+            color: var(--second-color);
+        }
+    }
+    .left {
+        .testimoni {
+            margin-left: 200px;
+        }
+    }
+}
+
+// main content 5 =========================================================================
+
+.main-content5 {
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 70px;
+    .left-content {
+        width: 50%;
+        background-color: var(--main-color);
+        padding: 30px;
+        height: 100%;
+        .heading h1 {
+            font-size: 70px;
+            margin-top: 0;
+            line-height: 60px;
+            color: white;
+            margin-bottom: 180px;
+        }
+        .flex-content {
+            display: flex;
+            justify-content: space-between;
+            .flex-items {
+                width: 250px;
+                color: white;
+                h4 {
+                    margin-bottom: 70px;
+                }
+                p {
+                    font-size: 17px;
+                    font-weight: 500;
+                    letter-spacing: 1.5px;
+                }
+            }
+            .left {
+                img {
+                    width: 30px;
+                    margin-top: 10px;
+                }
+            }
+            .right {
+                .rating {   
+                    display: flex;
+                    
+                    margin-top: -15px;
+                    
+                    .num {
+                        
+                        margin-right: 10px;
+                    }
+                    .star svg {
+                        width: 20px;
+                        height: 20px;
+                        margin-right: -5px;
+                        margin-top: 18px;
+                        
+
+                    }
+                }
+            }
+        }
+        
+    }
+    .right-content {
+        width: 50%;
+        background-repeat: no-repeat;
+        background-image: url(../asset/clearly-rated.webp);
+    }
+}
