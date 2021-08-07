@@ -8,7 +8,7 @@
 //     border: var(--border);
 // }
 body {
-    position: relative;
+    
     width: 100%;
     margin: 0 auto;
     height: auto;
@@ -30,20 +30,20 @@ input:focus {
     outline: none;
 }
 .container {
-    position: relative;
     display: flex;
     width: 1137px;
     margin: 0 auto;
     flex-direction: column;
     box-sizing: border-box;
-    overflow-x: hidden;
+    
     
 }
 .nav-container {
+    width: 100%;
     position: sticky;
     top: 0;
     box-sizing: border-box;
-    display: block;
+    z-index: 999;
     background-color: rgb(255,255,255);
     
 }
