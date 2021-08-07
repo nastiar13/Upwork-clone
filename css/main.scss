@@ -531,7 +531,9 @@ input:focus {
                 width: 250px;
                 color: white;
                 h4 {
-                    margin-bottom: 70px;
+                    margin-bottom: 50px;
+                    margin-top: 14px;
+                    font-size: 24px;
                 }
                 p {
                     font-size: 17px;
@@ -542,7 +544,7 @@ input:focus {
             .left {
                 img {
                     width: 30px;
-                    margin-top: 10px;
+                    
                 }
             }
             .right {
@@ -552,14 +554,18 @@ input:focus {
                     margin-top: -15px;
                     
                     .num {
+
                         
                         margin-right: 10px;
+                        h4 {
+                            margin-top: 14px;
+                        }
                     }
                     .star svg {
                         width: 20px;
                         height: 20px;
                         margin-right: -5px;
-                        margin-top: 18px;
+                        margin-top: 16px;
                         
 
                     }
