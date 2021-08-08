@@ -148,7 +148,7 @@ input:focus {
     margin: 0 auto;
     width: 100%;
     height: 1px;
-    background-color: var(--third-color);
+    background-color: rgba(157, 168, 155, 0.589);
     
 }
 .sub-nav {
@@ -515,6 +515,8 @@ input:focus {
     .left-content {
         width: 50%;
         background-color: var(--main-color);
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         padding: 30px;
         height: 100%;
         .heading h1 {
@@ -576,7 +578,186 @@ input:focus {
     }
     .right-content {
         width: 50%;
+        
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         background-repeat: no-repeat;
         background-image: url(../asset/clearly-rated.webp);
     }
 }
+
+
+// main content 6 ===============================================================================
+
+.main-content6 {
+    display: flex;
+    flex-direction: row;
+    
+    ul {
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        h1 {
+            font-size: 34px;
+            line-height: 0;
+            color:  var(--third-color);
+            cursor: pointer;
+
+            &:nth-child(1){
+                color: rgb(20,168,0);
+            }
+            &:hover {
+                color: rgb(19, 136, 4);
+            }
+            
+        }
+        span {
+            margin-bottom: 10px;
+            a {
+                font-size: 23px;
+                color: var(--second-color);
+                &:hover {
+                    color: var(--main-color);
+                }
+            }
+        }
+    }
+    .flex-content {
+        &-right {
+            display: flex;
+            flex-direction: column;
+            .list {
+                display: flex;
+
+            }
+            // set display to flex to showing the content
+            .top-skills {
+                display: flex;
+            }
+            .trending-skills {
+                display: none;
+            }
+            .US-skills {
+                display: none;
+            }
+            .project-catalog {
+                display: none;
+            }
+
+        }
+    }
+}
+
+
+// footer ======================================================================================================================================
+
+footer {
+    background-color: rgb(0,30,0);
+    padding: 30px 80px;
+    margin-top: 100px;
+    .footer {
+        width: 1130px;
+        margin: 0 auto;
+        &-flex {
+            display: flex;
+            
+            h5 {
+                color: #ffffffb6;
+                font-weight: 400;
+            }
+            ul {
+                display: flex;
+                flex-direction: column;              
+                padding: 0;
+                margin-right: 80px;
+                margin-bottom: 30px;
+                width: 210px;
+                
+                a {
+                    
+                    color: #ffffffb6;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: .6px;
+                    line-height: 20px;
+                    margin-bottom: 10px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &-line {
+            width: 100%;
+            height: .2px;
+            background-color: #ffffffb6;
+        }
+        &-link {
+            display: flex;
+            justify-content: space-between;
+            ul {
+                display: flex;
+                align-items: center;
+                padding: 0;
+                li {
+                    
+                    list-style: none;
+                    p {
+                        color: #ffffffb6;
+                        font-size: 13px;
+                    }
+                    a {
+                        margin-left: 10px;
+                        padding: 4px 8px;
+                        border: 1px solid #ffffffb6;
+                        border-radius: 50%;
+                        
+                        svg {
+                            fill: #ffffffb6;
+                        }
+                        &:hover {
+                            background-color: rgba(245, 245, 245, 0.322);
+                        }
+                    }
+                }
+            }
+        }
+        &-copyright {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            .copyright {
+                margin-right: 30px;
+                color: #ffffffb6;
+                font-size: 12px;
+            }
+            .vertical-line {
+                width: .2px;
+                height: 20px;
+                background-color: #ffffffb6;
+                margin-left: 15px;
+            }
+            .link {
+                ul {
+                    
+                   a {
+                       color: #ffffffb6;
+                       font-size: 13px;
+                       margin-right: 45px;
+                       padding: 0;
+                    } 
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+}
+
+
+
