@@ -8,7 +8,7 @@
 //     border: var(--border);
 // }
 body {
-    
+    overflow: hidden;
     width: 100%;
     margin: 0 auto;
     height: auto;
@@ -54,6 +54,8 @@ input:focus {
     width: 100%;
     margin: -10px auto;
     .logo {
+        position: relative;
+        z-index: 10;
         color: var(--main-color);
         h1 {
             
@@ -67,9 +69,12 @@ input:focus {
         ul {
             display: flex;
             align-items: center;
+            list-style: none;
+            
 
-
-            li {
+            .f {
+                position: relative;
+                z-index: 9;
                 display: flex;
                 align-items: center;
                 list-style: none;
@@ -85,15 +90,184 @@ input:focus {
                 a {
                     color: var(--main-color);
                 }
-                img {
+                .caret {
                     transform: rotate(180deg);
                 }
             }
         }
+// =================================================================================================================================================================================
+.active {
+    background-color: rgba(215, 238, 215, 0.836);
+}
+.pseudo-cont {
+    
+    display: flex;
+    
+    position: absolute;
+    background-color: white;
+    top: 35px;
+    width: 1780px;
+    left: -375px;
+    border-bottom: 2px solid rgba(120, 116, 116, 0.496);
+    padding: 100px 300px 40px;
+    
+    .line {
+        position: absolute;
+        z-index: 9;
+        left: -275px;
+        height: 0.1px;
+        background-color: #a2aa9d28;
+        top: 27.1px;
+        margin-bottom: 20px;
+    }
+    
+    .text {
+    display: flex;
+    align-items: center;
+    padding: 14px 19px;
+    
+    margin-bottom: 5px;
+    margin-right: 35px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(215, 238, 215, 0.836);
+    }
+    
+        .title {
+            margin: 0;
+            font-size: 18px;
+            color: rgb(0,30,0);
+            margin-bottom: 5px;
+        }
+        .sub-title {
+            font-size: 14px;
+            margin: 0;
+            color: var(--second-color);
+        }
+        .left-chevron {
+            margin-left: 88px;
+        }
+    }
+    
+    
+    .vert-line {
+        width: 2px;
+        height: 120px;
+        background-color: rgb(213,224,213);
+        margin-right: 60px;
+    }
+    .mid {
+        margin-right: 150px;
+        .green-line {
+            height: 4px;
+            width: 60px;
+            background-color: rgb(149,223,0);
+            
+        }
+        .h1 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: rgb(0,30,0);
+            
+        }
+        .h2 {
+            font-size: 13px;
+            font-weight: 200;
+            margin: 0;
+            color: rgb(137,147,129);
+            letter-spacing: .5px;
+            line-height: 20px
+        }
+        a {
+            font-size: 13px;
+            color: rgb(63,184,47);
+
+            &:hover {
+                color: rgb(75,139,52);
+                text-decoration: underline rgb(60,130,36);
+            }
+            svg {
+                position: relative;
+                top: 5px;
+                left: 9px;
+            }
+        }
+    }
+    .kanan {
+        display: flex;
+        &1 {
+            display: none;
+        }
+        &2 {
+            display: none;
+        }
+    }
+    .right {
+        margin-top: 50px;
+        .title {
+            width: 260px;
+            font-size: 16px;
+            color: rgba(0, 32, 0, 0.666);
+            font-weight: 400;
+            line-height: 10px;
+        }
+    }
+    .kanan1 {
+        
+        .list {
+            width: 700px;
+            margin-left: -100px;
+            box-sizing: border-box;
+        }
+        .list a {
+            width: 150px;
+            text-align: center;
+            height: 140px;
+            border: 1px solid rgb(213,224,213);
+            border-radius: 10px;
+            float: left;
+            margin: 10px 15px;
+            &:hover {
+                    background-color: rgb(242,247,242);
+                }
+            img {
+                width: 150px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            p {
+                display: flex;
+                word-wrap: break-word;
+                width: 150px;
+                margin-top: 0;
+                height: 40px;
+                align-items: center;
+                justify-content: center;
+                font-size: 15px;
+                color: rgba(0, 32, 0, 0.666);
+                
+            }
+        }
+    }
+    
+    
+    
+}
+.display-none {
+    display: none;
+}
+
+
+
+
+// ===================================================================================================================================================================================
+
     }
     .search-bar {
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: 10;
 
         form {
             border: 1px solid var(--third-color);
@@ -117,6 +291,8 @@ input:focus {
     .account {
         display: flex;
         align-items: center;
+        position: relative;
+        z-index: 10;
 
         a {
             margin-right: 20px;
@@ -149,6 +325,8 @@ input:focus {
     width: 100%;
     height: 1px;
     background-color: rgba(157, 168, 155, 0.589);
+    position: relative;
+    z-index: -1;
     
 }
 .sub-nav {
@@ -519,8 +697,6 @@ input:focus {
         border-bottom-left-radius: 10px;
         padding: 30px;
         height: 100%;
-        border-bottom-left-radius: 10px;
-        border-top-left-radius: 10px;
         .heading h1 {
             font-size: 70px;
             margin-top: 0;
@@ -585,8 +761,6 @@ input:focus {
         border-bottom-right-radius: 10px;
         background-repeat: no-repeat;
         background-image: url(../asset/clearly-rated.webp);
-        border-bottom-right-radius: 10px;
-        border-top-right-radius: 10px;
     }
 }
 
@@ -636,18 +810,13 @@ input:focus {
 
             }
             // set display to flex to showing the content
-            .top-skills {
+            .display-flex {
                 display: flex;
             }
-            .trending-skills {
+            .display-none {
                 display: none;
             }
-            .US-skills {
-                display: none;
-            }
-            .project-catalog {
-                display: none;
-            }
+            
 
         }
     }
