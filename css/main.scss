@@ -8,12 +8,12 @@
 //     border: var(--border);
 // }
 body {
-    overflow: hidden;
+    overflow-x: hidden;
     width: 100%;
     margin: 0 auto;
     height: auto;
     box-sizing: border-box;
-    font-family: 'Neue Montreal Medium';
+    font-family: 'poppins';
 
     
     
@@ -102,23 +102,23 @@ input:focus {
 .pseudo-cont {
     
     display: flex;
-    
     position: absolute;
     background-color: white;
-    top: 35px;
+    top: 45px;
     width: 1780px;
     left: -375px;
     border-bottom: 2px solid rgba(120, 116, 116, 0.496);
     padding: 100px 300px 40px;
     
-    .line {
+    .line1 {
         position: absolute;
         z-index: 9;
         left: -275px;
-        height: 0.1px;
-        background-color: #a2aa9d28;
-        top: 27.1px;
-        margin-bottom: 20px;
+        height: 1px;
+        width: 1980px;
+        background-color: #979d9420;
+        top: 36.4px;
+        margin: 0;
     }
     
     .text {
@@ -134,13 +134,14 @@ input:focus {
     }
     
         .title {
+            font-weight: 500;
             margin: 0;
-            font-size: 18px;
+            font-size: 17px;
             color: rgb(0,30,0);
             margin-bottom: 5px;
         }
         .sub-title {
-            font-size: 14px;
+            font-size: 13px;
             margin: 0;
             color: var(--second-color);
         }
@@ -165,6 +166,7 @@ input:focus {
             
         }
         .h1 {
+            font-weight: 500;
             margin-bottom: 10px;
             font-size: 18px;
             color: rgb(0,30,0);
@@ -253,8 +255,98 @@ input:focus {
     
     
 }
+
+
+
+
+// hover 2 ========================================================================================
+.hover2 {
+    display: flex;
+    a {
+        
+        border-radius: 15px;
+        padding: 15px 21px;
+        margin-left: 20px;
+        width: 260px;
+        line-height: 20px;
+        h4 {
+            margin-top: 0;
+            margin-bottom: 6px;
+            font-size: 17px;
+            font-weight: 500;
+            color: rgb(0,30,0);
+        }
+        p{
+            margin: 0;
+            font-size: 13px;
+            color: rgba(0, 32, 0, 0.666);
+        }
+        &:hover {
+            background-color: rgba(215, 238, 215, 0.836);
+        }
+    }
+}
 .display-none {
     display: none;
+}
+
+//pseudo-content2 ========================================================================================================
+#pseudo-content2 {
+    
+    .left {
+        height: min-content;
+        display: grid;
+        grid: 
+        'satu satu'
+        'satu satu';
+        gap: 10px 30px;
+        
+        a {
+            
+            border-radius: 15px;
+            padding: 18px 25px;
+            margin-left: 20px;
+            
+            width: 250px;
+            line-height: 20px;
+            h4 {
+                margin-top: 0;
+                margin-bottom: 6px;
+                font-size: 17px;
+                font-weight: 500;
+                color: rgb(0,30,0);
+            }
+            p{
+                margin: 0;
+                font-size: 13px;
+                color: rgba(0, 32, 0, 0.666);
+            }
+            &:hover {
+                background-color: rgba(215, 238, 215, 0.836);
+            }
+        }
+    }
+    .right {
+        margin-left: 200px;
+        margin-top: 0;
+        h5 {
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+
+        }
+        .guides {
+            border: 1px solid rgb(213,224,213);
+            box-sizing: border-box;
+            
+            h6 {
+                margin: 0;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
 }
 
 
@@ -326,7 +418,7 @@ input:focus {
     height: 1px;
     background-color: rgba(157, 168, 155, 0.589);
     position: relative;
-    z-index: -1;
+    z-index: 11;
     
 }
 .sub-nav {
@@ -357,8 +449,9 @@ input:focus {
     
     .hero {
         --webkit-text-size-adjust: 100%;
-        width: 55%;
+        width: 65%;
         .heading {
+            width: 700px;
             font-size: 80px;
             color: var(--main-color);
             line-height: 70px;
@@ -588,7 +681,7 @@ input:focus {
         color: white;
         border-top-right-radius: 10px;
         border-bottom-right-radius: 10px;
-        width: 500px;
+        width: 600px;
         background-color: rgb(34, 82, 214);
         h5 {
             font-size: 22px;
@@ -597,6 +690,7 @@ input:focus {
             margin-top: 0;
         }
         h1 {
+            width: 800px;
             margin-top: -20px;
             font-size: 74px;
             line-height: 70px;
