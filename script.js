@@ -1,7 +1,11 @@
 const fTalent = document.getElementById('ftalent');
 const fWork = document.getElementById('fwork');
+const whyUpwork = document.getElementById('whyupwork');
+
 const pseudoContent = document.getElementById('pseudo-content');
 const pseudoContent1 = document.getElementById('pseudo-content1');
+const pseudoContent2 = document.getElementById('pseudo-content2');
+
 
 
 
@@ -29,6 +33,7 @@ function psuedoActive(node,element,modClass){
 }
 psuedoActive(fTalent,pseudoContent,'display-none');
 psuedoActive(fwork,pseudoContent1,'display-none');
+psuedoActive(whyUpwork,pseudoContent2,'display-none');
 
 
 function mOver(hov,dispNone,dispNone1,dispFlex) {
@@ -51,3 +56,4 @@ function mOver(hov,dispNone,dispNone1,dispFlex) {
 mOver(hover1,kanan1,kanan2,kanan);
 mOver(hover2,kanan,kanan2,kanan1);
 mOver(hover3,kanan,kanan1,kanan2);
+
